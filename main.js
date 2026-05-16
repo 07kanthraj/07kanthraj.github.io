@@ -1,7 +1,4 @@
-// ── TICKER: duplicate content for seamless loop ──
-const track = document.getElementById("ticker-track");
-if (track) track.innerHTML += track.innerHTML;
-
+// ── TICKER (Removed) ──
 // ── SCROLL PROGRESS BAR ──
 const progress = document.getElementById("scroll-progress");
 window.addEventListener("scroll", () => {
@@ -23,7 +20,7 @@ window.addEventListener("scroll", () => {
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
-    if (pageYOffset >= sectionTop - 120) {
+    if (pageYOffset >= sectionTop - 200) {
       current = section.getAttribute("id");
     }
   });
@@ -36,23 +33,29 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// ── MAGNETIC BUTTONS ──
-const magneticBtns = document.querySelectorAll(".btn-magnetic");
-magneticBtns.forEach((btn) => {
-  btn.addEventListener("mousemove", (e) => {
-    const rect = btn.getBoundingClientRect();
+// ── MAGNETIC BUTTONS & NAV ──
+const magneticElements = document.querySelectorAll(".btn-magnetic, nav");
+magneticElements.forEach((el) => {
+  el.addEventListener("mousemove", (e) => {
+    const rect = el.getBoundingClientRect();
     const x = e.clientX - rect.left - rect.width / 2;
     const y = e.clientY - rect.top - rect.height / 2;
 
-    btn.style.transform = `translate(${x * 0.35}px, ${y * 0.35}px)`;
+    // Less intense for the nav
+    const strength = el.tagName === "NAV" ? 0.1 : 0.35;
+    el.style.transform = el.tagName === "NAV" 
+      ? `translate(calc(-50% + ${x * strength}px), ${y * strength}px)`
+      : `translate(${x * strength}px, ${y * strength}px)`;
   });
 
-  btn.addEventListener("mouseleave", () => {
-    btn.style.transform = `translate(0px, 0px)`;
+  el.addEventListener("mouseleave", () => {
+    el.style.transform = el.tagName === "NAV" ? "translate(-50%, 0px)" : "translate(0px, 0px)";
   });
 });
 
-// ── SCROLL REVEAL: observe .sr elements ──
+// ── COMMAND PALETTE (Removed) ──
+
+// ── SCROLL REVEAL ──
 const obs = new IntersectionObserver(
   (entries) => {
     entries.forEach((e) => {
@@ -65,13 +68,11 @@ const obs = new IntersectionObserver(
   { threshold: 0.07, rootMargin: "0px 0px -32px 0px" },
 );
 
-// Observe all existing .sr elements
 document.querySelectorAll(".sr").forEach((el) => obs.observe(el));
 
-// Add staggered reveal to grid children
 document
   .querySelectorAll(
-    ".proj-grid .proj-card, .research-grid .res-card, .phil-grid .phil-card, .skills-grid .skill-group",
+    ".proj-grid .proj-card, .research-grid .res-card, .phil-grid .phil-card, .skills-grid .skill-group, .exp-item",
   )
   .forEach((el, i) => {
     el.style.transitionDelay = i * 0.06 + "s";

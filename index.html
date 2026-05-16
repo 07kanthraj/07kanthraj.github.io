@@ -31,23 +31,31 @@
 
     <!-- NAV -->
     <nav aria-label="Site navigation">
-      <span class="nav-logo">Kanth Raj</span>
+
       <ul class="nav-center" role="list">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#patent">Patent</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" aria-label="About" class="active">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span class="nav-text">About</span>
+        </a></li>
+        <li><a href="#experience" aria-label="Experience">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          <span class="nav-text">Experience</span>
+        </a></li>
+        <li><a href="#projects" aria-label="Projects">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+          <span class="nav-text">Work</span>
+        </a></li>
+        <li><a href="#skills" aria-label="Skills">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          <span class="nav-text">Stack</span>
+        </a></li>
+        <li><a href="#contact" aria-label="Contact">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span class="nav-text">Mail</span>
+        </a></li>
       </ul>
-      <a
-        href="https://www.linkedin.com/in/kanth-raj-v"
-        target="_blank"
-        rel="noopener"
-        class="nav-pill btn-magnetic"
-        >LinkedIn ↗</a
-      >
     </nav>
+
 
     <!-- HERO -->
     <section class="hero" aria-labelledby="hero-name">
@@ -61,13 +69,29 @@
       </h1>
 
       <p class="role sr" style="transition-delay: 0.14s">
-        Engineer · Researcher · Builder of Systems
+        Researcher · Product Engineer
       </p>
 
+      <div class="social-grid sr" style="transition-delay: 0.18s">
+        <a href="https://github.com/07kanthraj" target="_blank" class="social-box" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="https://x.com/07kanthraj" target="_blank" class="social-box" aria-label="X">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/kanth-raj-v" target="_blank" class="social-box" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="mailto:07kanthraj@gmail.com" class="social-box" aria-label="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+
+
       <p class="hero-desc sr" style="transition-delay: 0.21s">
-        Building backend systems, cloud infrastructure, and AI research tools —
-        grounded in a rare interdisciplinary foundation of Physics, Mathematics,
-        and Computer Science.
+        Building scalable, automated systems with a focus on addressing systemic
+        asymmetry through information technology — grounded in an
+        interdisciplinary foundation of Physics, Mathematics, and CS.
       </p>
 
       <div class="manifesto sr" style="transition-delay: 0.25s">
@@ -110,75 +134,53 @@
       </div>
     </section>
 
-    <!-- TICKER -->
-    <div class="ticker" aria-hidden="true">
-      <div class="ticker-track" id="ticker-track">
-        <span class="ticker-item">Java Full Stack</span
-        ><span class="ticker-dot">·</span>
-        <span class="ticker-item">DevOps &amp; Cloud</span
-        ><span class="ticker-dot">·</span>
-        <span class="ticker-item">Linux Systems</span
-        ><span class="ticker-dot">·</span>
-        <span class="ticker-item">AI Research</span
-        ><span class="ticker-dot">·</span>
-        <span class="ticker-item">System Design</span
-        ><span class="ticker-dot">·</span>
-        <span class="ticker-item">Docker · Kubernetes</span
-        ><span class="ticker-dot">·</span>
-        <span class="ticker-item">Spring Boot</span
-        ><span class="ticker-dot">·</span>
-        <span class="ticker-item">AWS · Terraform</span
-        ><span class="ticker-dot">·</span>
-        <span class="ticker-item">Physics · Mathematics</span
-        ><span class="ticker-dot">·</span>
-        <span class="ticker-item">Patent Filed</span
-        ><span class="ticker-dot">·</span>
-        <span class="ticker-item">Formal Methods</span
-        ><span class="ticker-dot">·</span>
-        <span class="ticker-item">Deterministic AI</span
-        ><span class="ticker-dot">·</span>
-      </div>
-    </div>
-
-    <!-- ABOUT -->
-    <section class="section about-section" id="about" aria-labelledby="about-h">
+    <!-- EXPERIENCE -->
+    <section class="section experience-section" id="experience" aria-labelledby="exp-h">
       <div class="container">
-        <p class="eyebrow sr">About</p>
-        <h2 class="sec-h sr" id="about-h" style="transition-delay: 0.07s">
-          Built different,<br />by design.
+        <p class="eyebrow sr">Experience</p>
+        <h2 class="sec-h sr" id="exp-h" style="transition-delay: 0.07s">
+          Professional Trajectory.
         </h2>
-        <p class="sec-sub sr" style="transition-delay: 0.14s">
-          Most engineers pick one lane. I started at the intersection of three.
-        </p>
-
-        <div class="about-grid">
-          <div class="card sr" style="transition-delay: 0.2s">
-            <h3>The story</h3>
-            <p>
-              My BSc combined Physics, Mathematics, and Computer Science — a
-              combination most engineers never get. It taught me to think in
-              systems, question assumptions rigorously, and treat software the
-              way a scientist treats an experiment.
-            </p>
-            <blockquote class="blockquote">
-              "I've always wanted to contribute to science. Right now,
-              engineering is how I do it."
-            </blockquote>
-            <p>
-              My MCA deepened that foundation with real engineering discipline.
-              A filed patent, two active research papers, and projects like
-              Designa and DocPort emerge when scientific rigour meets
-              production-grade software.
-            </p>
-            <p>
-              Long term: build products and technologies that change how people
-              live — the kind that earn a place in research journals
-              <em>and</em> in millions of people's daily lives.
-            </p>
+        <div class="exp-timeline sr" style="transition-delay: 0.2s">
+          <div class="exp-item">
+            <div class="exp-meta">
+              <div class="exp-corp">Amagle Software</div>
+              <div class="exp-date">Feb 2026 - Present</div>
+            </div>
+            <div class="exp-content">
+              <div class="exp-role">DevOps Engineer Intern</div>
+              <p class="exp-desc">
+                Building scalable, automated, and efficient systems that align engineering execution with strategic business goals.
+              </p>
+            </div>
           </div>
+          <div class="exp-item">
+            <div class="exp-meta">
+              <div class="exp-corp">NxtFrontier Technologies</div>
+              <div class="exp-date">June 2025 - Present</div>
+            </div>
+            <div class="exp-content">
+              <div class="exp-role">Researcher</div>
+              <p class="exp-desc">
+                Conducting cross-functional research on cloud systems, AI-driven architectures, and digital ecosystems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="sr" style="transition-delay: 0.28s">
-            <div class="card">
+
+    
+    <!-- EDUCATION -->
+    <section class="section edu-section" id="education" aria-labelledby="edu-h">
+      <div class="container">
+        <p class="eyebrow sr">Education</p>
+        <h2 class="sec-h sr" id="edu-h" style="transition-delay: 0.07s">
+          Academic Background.
+        </h2>
+        <div class="sr" style="transition-delay: 0.2s">
+        <div class="card">
               <h3>Education</h3>
               <ul class="edu-list" role="list">
                 <li class="edu-item" role="listitem">
@@ -201,187 +203,9 @@
                 </li>
               </ul>
             </div>
-
-            <div class="card" style="margin-top: 18px">
-              <h3>Engineering Principles</h3>
-              <ul class="prin-list">
-                <li class="prin-item">
-                  <span class="prin-arrow">→</span>Design before code. Always.
-                </li>
-                <li class="prin-item">
-                  <span class="prin-arrow">→</span>Automation over repetition.
-                </li>
-                <li class="prin-item">
-                  <span class="prin-arrow">→</span>Observability over guesswork.
-                </li>
-                <li class="prin-item">
-                  <span class="prin-arrow">→</span>Systems thinking over feature
-                  chasing.
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
     </section>
-
-    <!-- PROJECTS -->
-    <section
-      class="section projects-section"
-      id="projects"
-      aria-labelledby="proj-h"
-    >
-      <div class="container">
-        <p class="eyebrow sr">Projects</p>
-        <h2 class="sec-h sr" id="proj-h" style="transition-delay: 0.07s">
-          Things I've built.
-        </h2>
-        <p class="sec-sub sr" style="transition-delay: 0.14s">
-          From AI code synthesis engines to healthcare platforms and robotic
-          arms — each project is a research question made real.
-        </p>
-
-        <div class="proj-grid sr" style="transition-delay: 0.2s">
-          <a
-            href="https://github.com/07kanthraju/Designa"
-            target="_blank"
-            rel="noopener"
-            class="proj-card wide"
-            aria-label="Designa project"
-          >
-            <span class="proj-arrow" aria-hidden="true">↗</span>
-            <div class="proj-icon" aria-hidden="true">⚙️</div>
-            <div class="proj-tag">AI · Design Systems</div>
-            <div class="proj-name">Designa</div>
-            <div class="proj-desc">
-              A design-to-code synthesis engine that compiles structured design
-              specifications into validated source code using AI. Deterministic
-              validation, human-in-the-loop review, strict scope control. The
-              design spec — not the model — is the source of truth.
-            </div>
-            <div class="chips">
-              <span class="chip">JavaScript</span>
-              <span class="chip">LLM Integration</span>
-              <span class="chip">Code Synthesis</span>
-              <span class="chip">Deterministic Validation</span>
-            </div>
-          </a>
-
-          <a
-            href="https://github.com/07kanthraju/DocPort"
-            target="_blank"
-            rel="noopener"
-            class="proj-card"
-            aria-label="DocPort project"
-          >
-            <span class="proj-arrow" aria-hidden="true">↗</span>
-            <div class="proj-icon" aria-hidden="true">🏥</div>
-            <div class="proj-tag">Healthcare · Platform</div>
-            <div class="proj-name">DocPort</div>
-            <div class="proj-desc">
-              Doctor-first OPD insurance integration platform. Single onboarding
-              for practitioners, multi-insurer model, operational simplification
-              at scale in a fragmented ecosystem.
-            </div>
-            <div class="chips">
-              <span class="chip">TypeScript</span>
-              <span class="chip">REST API</span>
-              <span class="chip">Platform Design</span>
-            </div>
-          </a>
-
-          <a
-            href="https://github.com/07kanthraju/opencv-robotic-arm"
-            target="_blank"
-            rel="noopener"
-            class="proj-card"
-            aria-label="OpenCV Robotic Arm project"
-          >
-            <span class="proj-arrow" aria-hidden="true">↗</span>
-            <div class="proj-icon" aria-hidden="true">🤖</div>
-            <div class="proj-tag">Robotics · Vision</div>
-            <div class="proj-name">OpenCV Robotic Arm</div>
-            <div class="proj-desc">
-              Vision-Language-Action robotic arm using OpenCV. Computer vision
-              meets physical actuation — bridging research and real hardware in
-              a single project.
-            </div>
-            <div class="chips">
-              <span class="chip">Python</span>
-              <span class="chip">OpenCV</span>
-              <span class="chip">VLA</span>
-              <span class="chip">Robotics</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="cta-row sr" style="transition-delay: 0.32s">
-          <a
-            href="https://github.com/07kanthraju"
-            target="_blank"
-            rel="noopener"
-            class="btn-outline btn-magnetic"
-            >Explore on GitHub ↗</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <!-- PATENT -->
-    <section
-      class="section patent-section"
-      id="patent"
-      aria-labelledby="patent-h"
-    >
-      <div class="container">
-        <p class="eyebrow sr">Intellectual Property</p>
-        <h2 class="sec-h sr" id="patent-h" style="transition-delay: 0.07s">
-          Ideas worth<br />protecting.
-        </h2>
-        <p class="sec-sub sr" style="transition-delay: 0.14s">
-          Research that progresses from concept to formal claim — where
-          engineering meets invention.
-        </p>
-
-        <div class="patent-wrap sr" style="transition-delay: 0.2s">
-          <div>
-            <span class="patent-chip">Patent Filed</span>
-            <div class="patent-title">
-              Deterministic Structural Control Layer for AI-Driven Code
-              Generation Systems
-            </div>
-            <p class="patent-desc">
-              A novel architectural method for imposing deterministic,
-              scope-bounded constraints over probabilistic AI code generation
-              pipelines. The invention defines a validation and constraint layer
-              that ensures generated outputs remain auditable, predictable, and
-              aligned with formal specifications — bridging the gap between
-              probabilistic language models and production-grade engineering
-              standards.
-            </p>
-            <div class="patent-meta">
-              <div class="patent-kv">
-                <span class="patent-k">Status</span
-                ><span class="patent-v">Filed · In Review</span>
-              </div>
-              <div class="patent-kv">
-                <span class="patent-k">Domain</span
-                ><span class="patent-v">AI · Software Engineering</span>
-              </div>
-              <div class="patent-kv">
-                <span class="patent-k">Inventor</span
-                ><span class="patent-v">Kanth Raj V</span>
-              </div>
-            </div>
-          </div>
-          <div class="patent-seal" aria-hidden="true">
-            <span class="patent-seal-glyph">⚖️</span>
-            <span class="patent-seal-word">Patent</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- RESEARCH -->
     <section
       class="section research-section"
@@ -443,6 +267,163 @@
       </div>
     </section>
 
+    <!-- PATENT -->
+    <section
+      class="section patent-section"
+      id="patent"
+      aria-labelledby="patent-h"
+    >
+      <div class="container">
+        <p class="eyebrow sr">Intellectual Property</p>
+        <h2 class="sec-h sr" id="patent-h" style="transition-delay: 0.07s">
+          Ideas worth<br />protecting.
+        </h2>
+        <p class="sec-sub sr" style="transition-delay: 0.14s">
+          Research that progresses from concept to formal claim — where
+          engineering meets invention.
+        </p>
+
+        <div class="patent-wrap sr" style="transition-delay: 0.2s">
+          <div>
+            <span class="patent-chip">Patent Filed</span>
+            <div class="patent-title">
+              Deterministic Structural Control Layer for AI-Driven Code
+              Generation Systems
+            </div>
+            <p class="patent-desc">
+              A novel architectural method for imposing deterministic,
+              scope-bounded constraints over probabilistic AI code generation
+              pipelines. The invention defines a validation and constraint layer
+              that ensures generated outputs remain auditable, predictable, and
+              aligned with formal specifications — bridging the gap between
+              probabilistic language models and production-grade engineering
+              standards.
+            </p>
+            <div class="patent-meta">
+              <div class="patent-kv">
+                <span class="patent-k">Status</span
+                ><span class="patent-v">Filed · In Review</span>
+              </div>
+              <div class="patent-kv">
+                <span class="patent-k">Domain</span
+                ><span class="patent-v">AI · Software Engineering</span>
+              </div>
+              <div class="patent-kv">
+                <span class="patent-k">Inventor</span
+                ><span class="patent-v">Kanth Raj V</span>
+              </div>
+            </div>
+          </div>
+          <div class="patent-seal" aria-hidden="true">
+            <span class="patent-seal-glyph">⚖️</span>
+            <span class="patent-seal-word">Patent</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section
+      class="section projects-section"
+      id="projects"
+      aria-labelledby="proj-h"
+    >
+      <div class="container">
+        <p class="eyebrow sr">Projects</p>
+        <h2 class="sec-h sr" id="proj-h" style="transition-delay: 0.07s">
+          Things I've built.
+        </h2>
+        <p class="sec-sub sr" style="transition-delay: 0.14s">
+          From AI code synthesis engines to healthcare platforms and robotic
+          arms — each project is a research question made real.
+        </p>
+
+        <div class="proj-grid sr" style="transition-delay: 0.2s">
+          <a
+            href="https://github.com/07kanthraju/Designa"
+            target="_blank"
+            rel="noopener"
+            class="proj-card wide"
+            aria-label="Designa project"
+          >
+            <span class="proj-arrow" aria-hidden="true">↗</span>
+            <div class="proj-icon" aria-hidden="true">⚙️</div>
+            <div class="proj-tag">AI · Design Systems</div>
+            <div class="proj-name">Designa</div>
+            <div class="proj-desc">
+              AI-driven design-to-code synthesis engine. Compiles specifications into validated source code.
+            </div>
+
+
+            <div class="chips">
+              <span class="chip">JavaScript</span>
+              <span class="chip">LLM Integration</span>
+              <span class="chip">Code Synthesis</span>
+              <span class="chip">Deterministic Validation</span>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/07kanthraju/DocPort"
+            target="_blank"
+            rel="noopener"
+            class="proj-card"
+            aria-label="DocPort project"
+          >
+            <span class="proj-arrow" aria-hidden="true">↗</span>
+            <div class="proj-icon" aria-hidden="true">🏥</div>
+            <div class="proj-tag">Healthcare · Platform</div>
+            <div class="proj-name">DocPort</div>
+            <div class="proj-desc">
+              Doctor-first OPD insurance integration platform. Multi-insurer model for operational simplification.
+            </div>
+
+
+            <div class="chips">
+              <span class="chip">TypeScript</span>
+              <span class="chip">REST API</span>
+              <span class="chip">Platform Design</span>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/07kanthraju/opencv-robotic-arm"
+            target="_blank"
+            rel="noopener"
+            class="proj-card small"
+            aria-label="OpenCV Robotic Arm project"
+          >
+            <span class="proj-arrow" aria-hidden="true">↗</span>
+            <div class="proj-icon" aria-hidden="true">🤖</div>
+            <div class="proj-tag">Robotics</div>
+            <div class="proj-name">Robotic Arm</div>
+            <div class="proj-desc">
+              Vision-Language-Action robotic arm using OpenCV and physical actuation.
+            </div>
+
+
+            <div class="chips">
+              <span class="chip">Python</span>
+              <span class="chip">OpenCV</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="cta-row sr" style="transition-delay: 0.32s">
+          <a
+            href="https://github.com/07kanthraju"
+            target="_blank"
+            rel="noopener"
+            class="btn-outline btn-magnetic"
+            >Explore on GitHub ↗</a
+          >
+        </div>
+      </div>
+    </section>
+
+
+
+
     <!-- SKILLS -->
     <section
       class="section skills-section"
@@ -455,8 +436,8 @@
           What I work with.
         </h2>
         <p class="sec-sub sr" style="transition-delay: 0.14s">
-          Full-stack depth from the Linux kernel up to the React component tree
-          — with cloud and DevOps in between.
+          Full-stack depth from the Linux kernel up to Cloud Architecture —
+          including Product Strategy and Information Security.
         </p>
 
         <div
@@ -524,159 +505,64 @@
             <div class="skill-row">
               <span class="skill-nm">Linux</span>
               <div class="dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
+                <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
               </div>
             </div>
             <div class="skill-row">
-              <span class="skill-nm">Docker</span>
+              <span class="skill-nm">Docker &amp; K8s</span>
               <div class="dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot off"></div>
+                <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot off"></div>
               </div>
             </div>
             <div class="skill-row">
-              <span class="skill-nm">Kubernetes</span>
+              <span class="skill-nm">Ansible &amp; Terraform</span>
               <div class="dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot off"></div>
+                <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot off"></div><div class="dot off"></div>
               </div>
             </div>
             <div class="skill-row">
-              <span class="skill-nm">AWS</span>
+              <span class="skill-nm">Prometheus &amp; Grafana</span>
               <div class="dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot off"></div>
+                <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot off"></div><div class="dot off"></div>
               </div>
             </div>
             <div class="skill-row">
-              <span class="skill-nm">Terraform</span>
+              <span class="skill-nm">AWS Architecture</span>
               <div class="dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot off"></div>
-                <div class="dot off"></div>
-              </div>
-            </div>
-            <div class="skill-row">
-              <span class="skill-nm">GitHub Actions</span>
-              <div class="dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot off"></div>
+                <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot off"></div>
               </div>
             </div>
           </div>
+
 
           <div class="skill-group" role="listitem">
-            <div class="skill-label">Frontend &amp; Data</div>
+            <div class="skill-label">Strategy &amp; Data</div>
             <div class="skill-row">
-              <span class="skill-nm">React</span>
+              <span class="skill-nm">Product Strategy</span>
               <div class="dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot off"></div>
+                <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot off"></div>
               </div>
             </div>
             <div class="skill-row">
-              <span class="skill-nm">TypeScript</span>
+              <span class="skill-nm">Information Security</span>
               <div class="dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot off"></div>
+                <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot off"></div>
               </div>
             </div>
             <div class="skill-row">
-              <span class="skill-nm">JavaScript</span>
+              <span class="skill-nm">System Design</span>
               <div class="dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
+                <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot off"></div>
               </div>
             </div>
             <div class="skill-row">
-              <span class="skill-nm">MySQL</span>
+              <span class="skill-nm">MySQL / MongoDB</span>
               <div class="dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot off"></div>
-              </div>
-            </div>
-            <div class="skill-row">
-              <span class="skill-nm">MongoDB</span>
-              <div class="dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot off"></div>
-                <div class="dot off"></div>
+                <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot off"></div><div class="dot off"></div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- PHILOSOPHY -->
-    <section class="section phil-section" aria-labelledby="phil-h">
-      <div class="container">
-        <p class="eyebrow sr">Principles</p>
-        <h2 class="sec-h sr" id="phil-h" style="transition-delay: 0.07s">
-          How I think.
-        </h2>
-        <p class="sec-sub sr" style="transition-delay: 0.14s">
-          The mental models that shape every decision.
-        </p>
-
-        <div
-          class="phil-grid sr"
-          style="transition-delay: 0.2s"
-          role="list"
-          aria-label="Engineering principles"
-        >
-          <div class="phil-card" role="listitem">
-            <div class="phil-n">01</div>
-            <div class="phil-t">Design before code. Always.</div>
-          </div>
-          <div class="phil-card" role="listitem">
-            <div class="phil-n">02</div>
-            <div class="phil-t">Automate everything you'll do twice.</div>
-          </div>
-          <div class="phil-card" role="listitem">
-            <div class="phil-n">03</div>
-            <div class="phil-t">Observe before you optimise.</div>
-          </div>
-          <div class="phil-card" role="listitem">
-            <div class="phil-n">04</div>
-            <div class="phil-t">Determinism over chaos.</div>
-          </div>
-          <div class="phil-card" role="listitem">
-            <div class="phil-n">05</div>
-            <div class="phil-t">Build for people, not for metrics.</div>
-          </div>
         </div>
       </div>
     </section>
@@ -697,81 +583,8 @@
             Open to research collaborations, engineering opportunities, and
             conversations about systems, science, and product ideas that matter.
           </p>
-          <div class="contact-links">
-            <a
-              href="https://github.com/07kanthraju"
-              target="_blank"
-              rel="noopener"
-              class="c-link"
-              aria-label="GitHub profile"
-            >
-              <svg
-                width="15"
-                height="15"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path
-                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                />
-              </svg>
-              GitHub
-            </a>
-            <a
-              href="https://www.linkedin.com/in/kanth-raj-v"
-              target="_blank"
-              rel="noopener"
-              class="c-link"
-              aria-label="LinkedIn profile"
-            >
-              <svg
-                width="15"
-                height="15"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path
-                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                />
-                <rect x="2" y="9" width="4" height="12" />
-                <circle cx="4" cy="4" r="2" />
-              </svg>
-              LinkedIn
-            </a>
-            <a
-              href="mailto:07kanthraj@gmail.com"
-              class="c-link"
-              aria-label="Send email"
-            >
-              <svg
-                width="15"
-                height="15"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path
-                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                />
-                <polyline points="22,6 12,13 2,6" />
-              </svg>
-              Email
-            </a>
-          </div>
+
+
         </div>
       </div>
     </section>
@@ -779,7 +592,6 @@
     <!-- FOOTER -->
     <footer>
       <span class="foot-t">© 2026 Kanth Raj · Bengaluru, India</span>
-      <span class="foot-t">Built with intent. Designed with precision.</span>
     </footer>
 
     <script src="main.js"></script>
