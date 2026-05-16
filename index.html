@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="scroll-progress" aria-hidden="true"></div>
+    <div class="bg-mesh" aria-hidden="true"></div>
+
     <!-- NAV -->
     <nav aria-label="Site navigation">
       <span class="nav-logo">Kanth Raj</span>
@@ -41,7 +44,7 @@
         href="https://www.linkedin.com/in/kanth-raj-v"
         target="_blank"
         rel="noopener"
-        class="nav-pill"
+        class="nav-pill btn-magnetic"
         >LinkedIn ↗</a
       >
     </nav>
@@ -67,9 +70,19 @@
         and Computer Science.
       </p>
 
+      <div class="manifesto sr" style="transition-delay: 0.25s">
+        <span class="manifesto-label">Manifesto</span>
+        <p class="manifesto-text">
+          "I believe software should be as predictable as a mathematical proof
+          and as robust as a physical law. I build at the intersection where
+          scientific rigour meets engineering excellence."
+        </p>
+      </div>
+
+
       <div class="hero-btns sr" style="transition-delay: 0.28s">
-        <a href="#projects" class="btn-teal">View My Work</a>
-        <a href="#contact" class="btn-outline">Get In Touch</a>
+        <a href="#projects" class="btn-teal btn-magnetic">View My Work</a>
+        <a href="#contact" class="btn-outline btn-magnetic">Get In Touch</a>
       </div>
 
       <div
@@ -307,7 +320,7 @@
             href="https://github.com/07kanthraju"
             target="_blank"
             rel="noopener"
-            class="btn-outline"
+            class="btn-outline btn-magnetic"
             >Explore on GitHub ↗</a
           >
         </div>
